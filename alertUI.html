@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="/css/alertUI.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="alert-box" id = 'alert'> 
+        <p id="title">알림창</p>
+        <button id="close" class="exit" onclick="opWindow('none')">close</button>
+    </div>
+  
+    <button onclick="opWindow('block', '아이디를 입력하세요')">open1</button>
+    <button onclick="opWindow('block', '비밀번호를 입력하세요')">open2</button>
+
+    <script>
+        // 이벤트 리스너
+        // document.getElementById('close').addEventListener('click', function(){
+        //     document.getElementById('alert').style.display = 'none';
+        // });
+
+        function opWindow(parameter){
+            document.getElementById('alert').style.display = parameter;
+        }
+
+        // alert 창 호출
+        function opWindow(parameter, content){
+            //창 여닫 여부
+            document.getElementById('alert').style.display = parameter;
+            //텍스트 변경
+            document.getElementById('title').innerHTML = content; 
+        }
+
+    </script>
+
+</body>
+</html> 
