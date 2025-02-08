@@ -182,9 +182,46 @@ console.log(10 < 1 || 20 < 2);
 /**
  * 단축평가 (short circuit evalution)
  * 
+ * && (and)와 || (or)의 기본적인 작동원리
  * &&를 사용했을때 좌측이 true면 우측 값 반환
  * &&를 사용했을때 좌측이 false면 좌측 값 반환
  * ||를 사용했을때 좌측이 ture면 좌측 값 반환
  * ||를 사용했을때 좌측이 false면 우측 값 반환
  * 
  */
+console.log('---------');
+
+console.log(false && '아이브');
+console.log(true && '아이브');
+console.log(true || '아이브');
+console.log(false || '아이브');
+
+console.log(true && true && '아이브');
+console.log(ture && false && '아이브');
+
+/**
+ * 지수 연산자
+ */
+console.log('---------');
+
+console.log(2 ** 2);
+console.log(10 ** 3);
+
+/**
+ * null 연산자
+ */
+console.log('---------');
+
+let name;
+console.log(name);
+
+name = name ?? '강현욱';
+console.log(name);
+// 좌측값이 null이거 nudefined일때 우측 값을 반환
+
+name = name ?? '아이브';
+console.log(name);
+
+let name2;
+name2 ??= '강현욱';
+console.log(name2);
