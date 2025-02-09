@@ -65,3 +65,20 @@ console.log(wonYoung);
 wonYoung['group'] = '강현욱';
 console.log(wonYoung);
 
+/**
+ * 모든 키값 다 가져오기
+ */
+console.log(Object.keys(wonYoung));
+
+/**
+ * 모든 벨류값 다 가져오기
+ */
+console.log(Object.values(wonYoung));
+
+const name = '안유진';
+
+const yuJin3 = {
+    name, // name: name => name,
+    // key와 value의 이름이 같으면 키, 로 대체 가능하다
+}
+console.log(yuJin3);
