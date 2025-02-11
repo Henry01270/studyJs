@@ -133,7 +133,7 @@ console.log(numbers);
 // map()
 // Array 안에 있는 값들을 한번씩 순회하는 함수
 // 기존 Array 변경 x, 새로운 Array 반환
-console.log('----------')
+console.log('-----map-----')
 console.log(iveMembers.map((x) => x));
 console.log(iveMembers.map((x) => `아이브: ${x}`))
 
