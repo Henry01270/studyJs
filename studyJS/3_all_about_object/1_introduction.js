@@ -33,3 +33,4 @@ function IdolFunction(name, year){
 
 const gaEul = new IdolFunction('가을', 2002);
 console.log(gaEul);
+console.log(typeof gaEul);
